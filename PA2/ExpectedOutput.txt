@@ -1,0 +1,53 @@
+****************** Sorting Strings ******************
+
+Original order of strings: [abc, xyzw, xyzab, abcdx, wxcdx, abcxy, aac, wxcdx, abcx, abc]
+Radix-sorted order of strings: [aac, abc, abc, abcdx, abcx, abcxy, wxcdx, wxcdx, xyzab, xyzw]
+
+****************** Huffman Encoding ******************
+
+alphabet: [A, B, C, D, E, F, G, H]
+frequencies: [196, 656, 492, 984, 164, 65, 262, 459]
+
+ASCII encoding needs 26224 bits.
+Fixed length encoding needs 9922 bits.
+Huffman encoding needs 8939 bits.
+Huffman Encoding: A(0110); B(00); C(101); D(11); E(01111); F(01110); G(010); H(100)
+
+alphabet: [A, B, C, D, E, F]
+frequencies: [80, 140, 280, 400, 480, 620]
+
+ASCII encoding needs 16000 bits.
+Fixed length encoding needs 6066 bits.
+Huffman encoding needs 4785 bits.
+Huffman Encoding: A(1000); B(1001); C(101); D(00); E(01); F(11)
+
+alphabet: [A, B, C, D, E, F, G, H]
+frequencies: [8000, 14000, 24000, 40000, 36000, 52000, 22000, 4000]
+
+ASCII encoding needs 1600000 bits.
+Fixed length encoding needs 600088 bits.
+Huffman encoding needs 546091 bits.
+Huffman Encoding: A(11001); B(1101); C(011); D(00); E(111); F(10); G(010); H(11000)
+
+alphabet: [A, B, C, D, E, F, G, H]
+frequencies: [25000, 25000, 25000, 25000, 25000, 25000, 25000, 25000]
+
+ASCII encoding needs 1600000 bits.
+Fixed length encoding needs 600088 bits.
+Huffman encoding needs 600088 bits.
+Huffman Encoding: A(100); B(111); C(001); D(011); E(010); F(110); G(000); H(101)
+
+****************** Huffman Decoding ******************
+
+Original Message: BCCABBDDAECCBBAEDDCC
+
+alphabet: [A, B, C, D, E]
+frequencies: [3, 5, 6, 4, 2]
+
+ASCII encoding needs 160 bits.
+Fixed length encoding needs 115 bits.
+Huffman encoding needs 97 bits.
+Huffman Encoding: A(011); B(10); C(11); D(00); E(010)
+
+Encoded Message: 101111011101000000110101111101001101000001111
+Decoded Message: BCCABBDDAECCBBAEDDCC
