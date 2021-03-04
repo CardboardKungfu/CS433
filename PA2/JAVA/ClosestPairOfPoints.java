@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-import PA2.Point.PointComparator;
+// import Point.PointComparator;
 
 public class ClosestPairOfPoints {
 
@@ -123,7 +123,7 @@ public class ClosestPairOfPoints {
 
 	private static final void sortPointsByX(Point[] points) {
 		MergeSort<Point> mgSort = new MergeSort<Point>(points, points.length);
-		mgSort.mergesort(new PointComparator());
+		mgSort.mergesort(new Point.PointComparator());
 	}
 
 	private static void insertionSortPointsByY(Point[] points, int left, int right) {

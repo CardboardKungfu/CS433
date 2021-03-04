@@ -2,7 +2,7 @@ import java.util.Comparator;
 
 public class Point {
 
-	static class PointComparator implements Comparator<Point> {
+	public static class PointComparator implements Comparator<Point> {
 		@Override
 		public int compare(Point arg1, Point arg2) {
 			return arg1.x <= arg2.x ? -1 : 1;
